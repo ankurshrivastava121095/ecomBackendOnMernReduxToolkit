@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 
 
 const connectDB = () => {
-    return mongoose.connect(process.env.DB_LOCAL)
+    return mongoose.connect(process.env.DB_LIVE)
     .then((data)=>{
         console.log(`MongoDB connected with server: ${data.connection.host}`);
     }).catch((err)=>{
