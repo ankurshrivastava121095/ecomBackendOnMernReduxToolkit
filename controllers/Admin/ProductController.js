@@ -1,4 +1,4 @@
-const CategoryModel = require("../../models/CAtegory");
+const CategoryModel = require("../../models/Category");
 const ProductModel = require("../../models/Product")
 var cloudinary = require('cloudinary').v2;
 

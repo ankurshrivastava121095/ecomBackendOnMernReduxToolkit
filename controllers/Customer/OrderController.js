@@ -1,6 +1,5 @@
 const OrderModel = require("../../models/Order");
 const OrderedProductModel = require("../../models/OrderedProduct");
-const { ObjectId } = require('mongoose').Types;
 
 class OrderController {
 

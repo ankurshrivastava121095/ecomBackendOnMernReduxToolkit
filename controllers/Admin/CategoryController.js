@@ -1,4 +1,4 @@
-const CategoryModel = require("../../models/CAtegory")
+const CategoryModel = require("../../models/Category")
 var cloudinary = require('cloudinary').v2;
 
 cloudinary.config({ 
