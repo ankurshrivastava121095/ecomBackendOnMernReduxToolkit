@@ -28,7 +28,7 @@ app.use(express.json())
 // Static Middleware
 app.use(express.static(path.join(__dirname, 'uploads')))
 
-app.use('/api/oriol-ecom/',API)
+app.use('/api/sample-ecom/',API)
 
 connectDB()
 

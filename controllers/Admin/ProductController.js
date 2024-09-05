@@ -20,7 +20,7 @@ class ProductController {
             const file = req.files.productImage
     
             const myCloud = await cloudinary.uploader.upload(file.tempFilePath,{
-                folder : 'oriolEcomImages'
+                folder : 'dummyEcomImages'
             })
             const data = new ProductModel({
                 productName : productName,
@@ -135,7 +135,7 @@ class ProductController {
                 var file = req.files.productImage
       
                 var myCloud = await cloudinary.uploader.upload(file.tempFilePath,{
-                    folder : 'oriolEcomImages'
+                    folder : 'dummyEcomImages'
                 })
                 var data = await ProductModel.findByIdAndUpdate(req.params.id,{
                     productName : productName,

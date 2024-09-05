@@ -22,7 +22,7 @@ class CategoryController {
                 res.status(401).json({ 'status': 'failed', 'message': 'File Size is too long, Select less than 15MB' })
             } else {
                 const myCloud = await cloudinary.uploader.upload(file.tempFilePath,{
-                    folder : 'oriolEcomImages'
+                    folder : 'dummyEcomImages'
                 })
                 const data = new CategoryModel({
                     categoryName : categoryName,
@@ -90,7 +90,7 @@ class CategoryController {
                 var file = req.files.categoryImage
       
                 var myCloud = await cloudinary.uploader.upload(file.tempFilePath,{
-                    folder : 'oriolEcomImages'
+                    folder : 'dummyEcomImages'
                 })
                 var data = await CategoryModel.findByIdAndUpdate(req.params.id,{
                     categoryName : categoryName,
